@@ -1,13 +1,15 @@
 // - STEP 1: chiedo all'utente: "Quanti chilometri vuoi percorrere?"
 const tripLenght = prompt("Quanti chilometri vuoi percorrere?", 127);
-console.log("Chilometri da percorrere: " + tripLenght);
+const tripLenghtCheck = parseInt(tripLenght);
+console.log("Chilometri da percorrere: " + tripLenghtCheck);
 
 // - STEP 2: chiedo all'utente: "Quanti anni hai?"
 const userAge = prompt("Quanti anni hai?", 23);
-console.log("Età dell'utente: " + userAge);
+const userAgeCheck = parseInt(userAge);
+console.log("Età dell'utente: " + userAgeCheck);
 
 // - STEP 3: calcolo il prezzo del biglietto in base ai km percorsi
-let lenghtPrize = tripLenght * 0.21;
+let lenghtPrize = tripLenghtCheck * 0.21;
 console.log(
   "Prezzo del viaggio sulla base del chilometraggio scelto: " + lenghtPrize
 );

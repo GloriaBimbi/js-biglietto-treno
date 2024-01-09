@@ -20,4 +20,7 @@ h4 {
 .prize {
   color: red;
   font-size: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 30px;
 }
