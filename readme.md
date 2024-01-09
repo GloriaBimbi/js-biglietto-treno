@@ -14,6 +14,6 @@ va applicato uno sconto del 40% per gli over 65
 
 - STEP 1: chiedo all'utente: "Quanti chilometri vuoi percorrere?"
 - STEP 2: chiedo all'utente: "Quanti anni hai?"
-- STEP 3: calcolo il prezzo del biglietto in base ai km percorsi
-- STEP 4: applico al prezzo ottenuto un eventuale sconto per l'età dell'utente
+- STEP 3: calcolo il prezzo del biglietto in base ai km percorsi e lo arrotondo a due decimali
+- STEP 4: applico al prezzo ottenuto un eventuale sconto per l'età dell'utente e lo arrotondo a due decimali
 - STEP 5: stampo il prezzo del biglietto

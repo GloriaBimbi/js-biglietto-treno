@@ -1,5 +1,5 @@
 html {
-  background-color: rgba(108, 108, 96);
+  background-color: black;
   margin: 0 auto;
 }
 
@@ -18,7 +18,7 @@ h4 {
 }
 
 .prize {
-  color: red;
+  color: grey;
   font-size: 50px;
   padding: 10px 20px;
   background-color: white;

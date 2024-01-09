@@ -10,23 +10,29 @@ console.log("Età dell'utente: " + userAgeCheck);
 
 // - STEP 3: calcolo il prezzo del biglietto in base ai km percorsi
 let lenghtPrize = tripLenghtCheck * 0.21;
+let lenghtPrizeFixed = lenghtPrize.toFixed(2);
+
 console.log(
-  "Prezzo del viaggio sulla base del chilometraggio scelto: " + lenghtPrize
+  "Prezzo del viaggio sulla base del chilometraggio scelto: " + lenghtPrizeFixed
 );
 
 // - STEP 4: applico al prezzo ottenuto un eventuale sconto per l'età dell'utente
 let finalPrize = 0;
+let finalPrizeFixed = 0;
 
 if (userAge < 18) {
   finalPrize = lenghtPrize * 0.8;
-  console.log("Il prezzo viene scontato a: " + finalPrize);
+  finalPrizeFixed = finalPrize.toFixed(2);
+  console.log("Il prezzo viene scontato a: " + finalPrizeFixed);
 } else if (userAge >= 65) {
   finalPrize = lenghtPrize * 0.6;
-  console.log("Il prezzo viene scontato a: " + finalPrize);
+  finalPrizeFixed = finalPrize.toFixed(2);
+  console.log("Il prezzo viene scontato a: " + finalPrizeFixed);
 } else {
   finalPrize = lenghtPrize;
-  console.log("Il prezzo rimane invariato a: " + finalPrize);
+  finalPrizeFixed = finalPrize.toFixed(2);
+  console.log("Il prezzo rimane invariato a: " + finalPrizeFixed);
 }
 
 // - STEP 5: stampo il prezzo del biglietto
-document.getElementById("finalPrize").innerText = finalPrize;
+document.getElementById("finalPrize").innerText = finalPrizeFixed;
